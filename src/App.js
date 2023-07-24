@@ -1,15 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 
+const Header = () => {
+  return <h2>Hello world</h2>
+}
+
+const Field = () => {
+  return <input placeholder="Type here" type = "text"/>
+}
+
+function Btn () {
+  // const text = "Log In";
+  const res = () => {
+    return "Log in";
+  }
+  const p = <p>Log in</p>
+  return <button>{p}</button>
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+        <Header/>
+        <Field/>
+        <Btn/>
     </div>
   );
 }
