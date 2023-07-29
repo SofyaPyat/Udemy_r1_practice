@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {StrictMode} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { Header } from './App';
 
 // const elem = <h2>Hello, world!</h2>;
 // const elem = React.createElement("h2", {className: "greetings"}, "Hello, world!")   //сначала название элемента, затем название класса для элемента, затем содержимое тега
@@ -18,9 +19,9 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-   <React.StrictMode>
+   <StrictMode>
      <App />
-  </React.StrictMode>
+  </StrictMode>
  // elem
 );
 
